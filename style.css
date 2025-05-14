@@ -1,0 +1,69 @@
+:root {
+	--color-blue: rgb(8, 118, 133);
+	--color-darkback: rgb(20, 18, 18);
+    --color-dark: rgb(26, 25, 25);
+    --color-darklighter: rgb(63, 59, 59);
+    --color-gray : gray;
+} 
+
+body {
+	background-color: var(--color-darkback);
+	color: var(--color-blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4rem;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+
+}
+
+.content--add-item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+#input-new-task,
+#bnt-new-task {
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    outline: 1rem;
+}
+
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+
+}
+
+#bnt-new-task{
+    background-color: var(--color-darklighter);
+    color: var(--color-gray);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+#bnt-new-task:hover{
+    background-color: var(--color-dark);
+
+}
+
+#To-Do-list li{
+    list-style: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+
+}
